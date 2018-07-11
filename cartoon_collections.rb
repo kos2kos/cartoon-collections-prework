@@ -26,9 +26,17 @@ def find_the_cheese(food)# code an argument here
   bool = nil
   food.any? do |cheez|
        if cheez.include? cheese_types[0]
-         return cheese_types[]
+         bool = cheese_types[0]
+         break
+         return bool
        elsif cheez.include? cheese_types[1]
+         bool = cheese_types[1]
+         break
+         return bool
        elsif cheez.include? cheese_types[2]
-
+         bool = cheese_types[2]
+         break
+         return bool
    end
+   bool
 end
