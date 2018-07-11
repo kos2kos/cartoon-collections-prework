@@ -17,6 +17,7 @@ def long_planeteer_calls(calls)# code an argument here
   # Your code here
   calls.any? do |words|
     words.length > 4
+  end
 end
 
 def find_the_cheese(food)# code an argument here
@@ -24,5 +25,5 @@ def find_the_cheese(food)# code an argument here
   cheese_types = ["cheddar", "gouda", "camembert"]
   food.any? do |cheez|
        cheez.include? cheese_types[0] || cheese_types[1] || cheese_types[2]
-     end
+   end
 end
