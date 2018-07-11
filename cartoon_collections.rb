@@ -23,10 +23,12 @@ end
 def find_the_cheese(food)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+  bool = nil
   food.any? do |cheez|
        if cheez.include? cheese_types[0]
-                if cheez.include? cheese_types[0]
-       if cheez.include? cheese_types[0]
+         return cheese_types[]
+       elsif cheez.include? cheese_types[1]
+       elsif cheez.include? cheese_types[2]
 
    end
 end
